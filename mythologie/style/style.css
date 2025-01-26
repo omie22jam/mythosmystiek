@@ -1,0 +1,164 @@
+a:hover {
+    color: lightskyblue;
+
+}
+
+/* ruimte en vorm */
+a {
+    background-color: cadetblue;
+    padding: 10px 20px;
+    border-radius: 10em;
+    transition: none;
+    animation-name: fadeln;
+    animation-duration: 3s;
+    text-decoration: none;
+    padding-inline: 2em;
+    color: black;
+    transition: backgroundc-color 0.5s, 0.5s;
+}
+
+a:active {
+    background-color: darkgreen;
+    color: honeydew;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    transform: scale(1);
+}
+
+@font-face {
+    font-family: timeless;
+    src: url('../fonts/Timeless.otf');
+}
+
+footer {
+    text-align: center;
+}
+
+
+h2,
+h1 {
+    font-family: timeless, sans-serif;
+}
+
+/* h1 */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+img {
+    margin: auto;
+}
+
+#logo img {
+    width: 70%;
+}
+
+@keyframes fadeln {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: lightgrey
+}
+
+div,
+img {
+    width: 10em;
+    border-radius: 1em;
+}
+
+article {
+    display: flex;
+    background-color: lightblue;
+    border: 1px solid;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-right: 1em;
+    font-size: small;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+div {
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.bodyindex h2,
+.bodyindex p {
+    justify-content: center;
+    text-align: center;
+}
+
+/* met nht en type lukte het niet om in het midden te brengen, heb daarom hiervoor class gebruikt. */
+.bodyoverons .overons,
+.bodyafleveringen .afleveringen {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10em;
+    margin-top: 1em;
+    font-size: x-large;
+    background-color: cadetblue;
+    color: aliceblue;
+    animation-name: fadeln;
+    animation-duration: 3s;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+section {
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+h2 {
+    border-top: 1px solid;
+    padding-top: 1em;
+}
+
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: auto;
+}
